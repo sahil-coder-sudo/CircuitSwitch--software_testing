@@ -1,0 +1,146 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;;
+}
+
+.container {
+    width: 85%;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    background-color: #fff;
+    border-bottom: 1px solid rgb(88, 88, 88);
+    box-shadow: 2px 2px 2px lightgray;
+}
+
+.nav__list {
+    align-items: center;
+    font-size: 1.3em;
+}
+
+.nav__item {
+    list-style: none;
+
+}
+
+.nav__link {
+    text-decoration: none;
+    padding: 0.2em 0.5em;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.nav__link:hover {
+    opacity: 70%;
+    background-color: black;
+}
+
+.nav__link--btn {
+    /* background-color: rgb(0, 0, 0); */
+    border: 2px solid red;
+    color: black;
+}
+
+.nav__item + .nav__item {
+    margin-left: 2.5em;
+}
+
+.primary__nav {
+    color: rgb(255, 0, 0);
+}
+
+.secondary__nav {
+    color: red;
+}
+
+.logo {
+    width: 10em;
+    padding: 1em;
+}
+
+.login__section {
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    height: 100vh;
+
+}
+
+.login__details {
+   padding: 2em;
+   text-align: center;
+}
+
+.login__details > h1 {
+    align-self: baseline;
+}
+
+.heading__statment {
+    font-size: 60px;
+    font-family: 'Display Fair', serif;
+}
+
+.statment {
+    padding-bottom: 3em;
+}
+
+.name,.password {
+    font-family: serif;
+}
+
+.name__input {
+    align-self: center;
+    padding: 0.5em;
+    font-size: 21px;
+    border-radius: 5px;
+}
+
+.password::after {
+    property: value;
+    color: azure;
+    margin-bottom: 5em;
+}
+
+.forgot__password {
+    color: rgb(74, 74, 228);
+    text-decoration: none;
+}
+
+.submit__btn {
+    text-decoration: none;
+    text-align: center;
+}
+
+.submit__btn:hover {
+    opacity: 70%;
+}
+
+.login--btn {
+    /* text-decoration: none; */
+    padding: 0.2em 0.5em;
+    margin-top: 1.5em;
+
+    background-color: rgb(52, 231, 52);
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+.login--btn:hover {
+    opacity: 70%;
+}
