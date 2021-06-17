@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto,Arial,Helvetica Neue,Helvetica,sans-serif;   
     font-size: 16px;
 }
 
@@ -42,7 +42,7 @@ img {
 .nav__link {
     text-decoration: none;
     padding: 0.2em 0.5em;
-    border: 2px solid black;
+    border: 2px solid transparent;
     border-radius: 5px;
 }
 
@@ -53,7 +53,7 @@ img {
 
 .nav__link--btn {
     /* background-color: rgb(0, 0, 0); */
-    border: 2px solid red;
+    border: 2px solid transparent;
     color: black;
 }
 
@@ -70,14 +70,14 @@ img {
 }
 
 .logo {
-    width: 10em;
+    width: 15em;
     padding: 1em;
 }
 
 .login__section {
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     height: 100vh;
 
 }
@@ -87,60 +87,75 @@ img {
    text-align: center;
 }
 
-.login__details > h1 {
-    align-self: baseline;
-}
-
 .heading__statment {
-    font-size: 60px;
-    font-family: 'Display Fair', serif;
+    font-size: 2em;
+    font-weight: 500;
 }
 
 .statment {
     padding-bottom: 3em;
+    color: #69718c;
+    line-height: 1.5;
+    margin-top: 15px;
 }
 
-.name,.password {
+.login--name {
+
+}
+
+.login--password {
+
+}
+
+.login--name,.login--password {
     font-family: serif;
 }
 
-.name__input {
-    align-self: center;
-    padding: 0.5em;
-    font-size: 21px;
-    border-radius: 5px;
-}
-
-.password::after {
-    property: value;
-    color: azure;
-    margin-bottom: 5em;
+.login--name__input {
+    padding: 0 48px 0 24px;
+    margin-top: 10px;
+    font-size: 1.5em;
+    border: 2px solid transparent;
+    border-radius: 2px;
+    color: #2b2d42;
+    background-color: #f4f7fc;
+    line-height: 3;
 }
 
 .forgot__password {
-    color: rgb(74, 74, 228);
+    margin-top: 8px;
+}
+
+.forgot__password > a {
+    color: #8d9cb6;
     text-decoration: none;
 }
 
-.submit__btn {
-    text-decoration: none;
-    text-align: center;
-}
-
-.submit__btn:hover {
-    opacity: 70%;
+.forgot__password >a:hover {
+    color: red;
 }
 
 .login--btn {
-    /* text-decoration: none; */
-    padding: 0.2em 0.5em;
     margin-top: 1.5em;
 
-    background-color: rgb(52, 231, 52);
-    font-size: 30px;
+    background-color: #e3001b;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 3;
     border-radius: 5px;
+
+    box-shadow: none;
+    border: 2px solid transparent;
+    
 }
 
 .login--btn:hover {
     opacity: 70%;
+}
+
+.submit__btn {
+    padding: 1em 4em;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
 }
