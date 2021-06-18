@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    font-family: Roboto,Arial,Helvetica Neue,Helvetica,sans-serif;   
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
 
@@ -29,13 +29,18 @@ img {
     box-shadow: 2px 2px 2px lightgray;
 }
 
+.logo {
+    width: 11.5em;
+}
+
 .nav__list {
     align-items: center;
-    font-size: 1.3em;
+
 }
 
 .nav__item {
     list-style: none;
+    font-size: 1.75em;
 
 }
 
@@ -44,6 +49,7 @@ img {
     padding: 0.2em 0.5em;
     border: 2px solid transparent;
     border-radius: 5px;
+
 }
 
 .nav__link:hover {
@@ -67,11 +73,6 @@ img {
 
 .secondary__nav {
     color: red;
-}
-
-.logo {
-    width: 15em;
-    padding: 1em;
 }
 
 .login__section {

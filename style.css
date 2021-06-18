@@ -30,7 +30,7 @@ img {
 }
 
 .logo {
-    width: 15em;
+    width: 11.5em;
 }
 
 .nav__list {
@@ -156,4 +156,9 @@ footer {
 
 .footer__links {
     text-transform: uppercase;
+}
+
+.footer__items {
+    color: yellow;
+    text-decoration: none;
 }

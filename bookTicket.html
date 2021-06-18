@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
-    <title>Log In</title>
+    <link rel="stylesheet" href="bookTicket.css">
+    <title>Book Tickets</title>
 </head>
 
 <body>
@@ -28,31 +28,48 @@
             </div>
         </nav>
     </header>
-
     <main>
         <section class="main__section">
             <div class="container row login__section">
 
                 <div class="login__details">
                     <div class="login--header">
-                        <h1 class="heading__statment">Log In to Circuit-Switch.com</h1>
+                        <h1 class="heading__statment">Book Tickets on Circuit-Switch.com</h1>
                         <p class="statment">Enter your details below.</p>
                     </div>
-                    <div class="login--name">
-                        <input type="text" class="login--name__input" placeholder="Enter Your Username">
+                    <!-- <div class="login--name">
+                        <input type="" class="login--name__input" placeholder="Enter Your Username">
                     </div>
                     <div class="login--password">
                         <input type="password" class="login--name__input" placeholder="Enter Your Password">
-                    </div>
-                    <div class="forgot__password"><a href="#">Forgot password?</a></div> <br>
+                    </div> -->
+
+                    <p class="selector__para">Select Your Race--Type:
+                        <select class="login--name__input">
+                            <option selected>FORMULA 1</option>
+                            <option>NASCAR</option>
+                            <option>DRAG RACING</option>
+                        </select>
+                    </P>
+                    <P class="selector__para">Enter the Circuit:
+                        <select class="login--name__input">
+                            <option selected> Silverstone</option>
+                            <option>Baku</option>
+                            <option>Hokenheimring</option>
+                            <option>Bahrain</option>
+                        </select>
+                    </p>
+
+                    <br>
+
                     <button class="login--btn">
-                        <a href="bookTicket.html" class="submit__btn">Log In</a>
+                        <a href="#" class="submit__btn">Book Ticket</a>
                     </button>
                 </div>
             </div>
         </section>
     </main>
+
 </body>
-<script src="script.js"></script>
 
 </html>

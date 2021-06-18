@@ -18,6 +18,12 @@ img {
     margin: 0 auto;
 }
 
+.flex--container {
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+}
+
 .row {
     display: flex;
     justify-content: space-between;
@@ -75,74 +81,65 @@ img {
     color: red;
 }
 
-.hero__section {
-    background-color: bisque;
-}
-
-.container__flex {
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-}
-
-.hero__img {
-    width: 50em;
-    align-self: center;
-}
-
-.hero__text {
+.info--heading {
     width: 40%;
+    padding: 10em 0;
+
+    text-align: center;
 }
 
-.login--btn {
-    margin-top: 1.5em;
+.info__box {
+    width: 40%;
+    padding: 10em 0;
 
-    background-color: #e3001b;
-    font-size: 1em;
-    font-weight: bold;
-    line-height: 3;
-    border-radius: 5px;
+    background-color: lavender;
 
-    box-shadow: none;
+    text-align: center;
+}
+
+.info--heading--text {
+    font-size: 45px;
+}
+
+.info--heading--subtext {
+    font-size: 21px;
+}
+
+.info__box > div {
+    line-height: 5;
+
+}
+
+.info__box > div > input {
+    padding: 1em 4em 1em 2em;
+    margin: 0.5em 0;
+
+    font-size: 1.25em;
+    color: #2b2d42;
+    background-color: #f4f7fc;
+
+
     border: 2px solid transparent;
-    
-}
-
-.login--btn:hover {
-    opacity: 70%;
-    background-color: rgb(148, 212, 52);
+    border-radius: 2px;
 
 }
 
-.submit__btn {
+.btn {
     padding: 1em 4em;
+    margin: 3em 0;
 
+    font-size: 1.25em;
     color: #fff;
+    background-color: red;
     text-decoration: none;
     text-transform: uppercase;
+
+    border: 2px solid transparent;
+    border-radius: 2px;
 }
 
-footer {
-    background-color: black;
-}
-
-.footer__list {
-    width: 85%;
-    margin: 0 auto;
-    padding: 2em;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    list-style: none;
-    color: red;
-}
-
-.footer__links {
-    text-transform: uppercase;
-}
-
-.footer__items {
-    color: yellow;
-    text-decoration: none;
+.btn:hover {
+    opacity: 50%;
+    background-color: rgb(135, 197, 42);
+    color: black;
 }
