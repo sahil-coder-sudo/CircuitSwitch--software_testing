@@ -1,0 +1,148 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;;
+}
+
+.container {
+    width: 85%;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    background-color: #fff;
+    border-bottom: 1px solid rgb(88, 88, 88);
+    box-shadow: 2px 2px 2px lightgray;
+}
+
+.logo {
+    width: 11.5em;
+}
+
+.nav__list {
+    align-items: center;
+
+}
+
+.nav__item {
+    list-style: none;
+    font-size: 1.75em;
+
+}
+
+.nav__link {
+    text-decoration: none;
+    padding: 0.2em 0.5em;
+    border: 2px solid transparent;
+    border-radius: 5px;
+
+}
+
+.nav__link:hover {
+    opacity: 70%;
+    background-color: black;
+}
+
+.nav__link--btn {
+    /* background-color: rgb(0, 0, 0); */
+    border: 2px solid transparent;
+    color: black;
+}
+
+.nav__item + .nav__item {
+    margin-left: 2.5em;
+}
+
+.primary__nav {
+    color: rgb(255, 0, 0);
+}
+
+.secondary__nav {
+    color: red;
+}
+
+.hero__section {
+    background-color: bisque;
+}
+
+.container__flex {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.hero__img {
+    width: 50em;
+    align-self: center;
+}
+
+.hero__text {
+    width: 40%;
+}
+
+.login--btn {
+    margin-top: 1.5em;
+
+    background-color: #e3001b;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 3;
+    border-radius: 5px;
+
+    box-shadow: none;
+    border: 2px solid transparent;
+    
+}
+
+.login--btn:hover {
+    opacity: 70%;
+    background-color: rgb(148, 212, 52);
+
+}
+
+.submit__btn {
+    padding: 1em 4em;
+
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: black;
+}
+
+.footer__list {
+    width: 85%;
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    list-style: none;
+    color: red;
+}
+
+.footer__links {
+    text-transform: uppercase;
+}
+
+.footer__items {
+    color: yellow;
+    text-decoration: none;
+}
